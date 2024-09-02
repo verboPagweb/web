@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="java.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="web icon" href="../IMG/verbo.png">
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Juventud Verbo | Zona 21</title>
+</head>
+
+<body>
+    <nav class="side-nav">
+        <H1>JV</H1>
+        <ul>
+            <li><a href="#" onclick="showSection('home')"><i class="fas fa-home"></i> Home</a></li>
+
+            </li>
+            <li><a href="#" onclick="showSection('galeria')"><i class="fas fa-images"></i> Galería</a></li>
+            <li><a href="#" onclick="showSection('videos')"><i class="fas fa-video"></i> Videos</a></li>
+            <li><a href="#" onclick="showSection('contactos')"><i class="fas fa-address-book"></i> Contactos</a></li>
+            <li><a href="#" onclick="showSection('ubicacion')"><i class="fas fa-map-marker-alt"></i> Ubicación</a></li>
+
+
+            <li>
+                <a href="#" class="dropdown-toggle"><i class="fas fa-tachometer-alt"></i> Formularios</a>
+                <ul class="dropdown">
+                    <li><a href=""><i class=""></i>
+                            Formulario de Inscripción</a></li>
+
+                </ul>
+        </ul>
+    </nav>
+
+
+    <div class="menu-toggle" id="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="side-nav" id="mobile-menu">
+        <H1>JV</H1>
+        <ul>
+            <li><a href="#" onclick="showSection('home')"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#" onclick="showSection('galeria')"><i class="fas fa-images"></i> Galería</a></li>
+            <li><a href="#" onclick="showSection('videos')"><i class="fas fa-video"></i> Videos</a></li>
+            <li><a href="#" onclick="showSection('contactos')"><i class="fas fa-address-book"></i> Contactos</a></li>
+            <li><a href="#" onclick="showSection('ubicacion')"><i class="fas fa-map-marker-alt"></i> Ubicación</a></li>
+            <li>
+                <a href="#" class="dropdown-toggle"><i class="fas fa-tachometer-alt"></i> Formularios</a>
+                <ul class="dropdown">
+                    <li><a href="">Formulario de Inscripción</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
+        });
+
+        // Cerrar el menú al hacer clic en un enlace
+        document.querySelectorAll('#mobile-menu a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                var menu = document.getElementById('mobile-menu');
+                menu.classList.remove('active');
+            });
+        });
+
+
+    </script>
+
+
+
+    <div class="rectangle-with-circle"></div>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.side-nav').classList.toggle('show');
+        });
+    </script>
+
+
+
+    </div>
+    <div id="home" class="section active">
+        <video autoplay muted loop id="background-video">
+            <source src="https://tactusmarketing.com/wp-content/uploads/tactus-waves-hero.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+
+        <section class='align-items-center d-flex hero justify-content-center'>
+            <div class='gradient-overlay position-absolute w-100'></div>
+            <div class='content mb-5 position-relative text-center'>
+                <h1 class='blend hero-title'>
+                    <span class="juventud">Juventud</span>
+                    <span class="verbo">Verbo</span>
+                    <br>
+                    Atanacio
+                </h1>
+            </div>
+        </section>
+    </div>
+
+    <div id="galeria" class="section">
+        <h2 style="font-size: 50px;"></h2>
+        <div class="gallery-container">
+            <div class="image-gallery">
+                <img src="../IMG/salida.jpg" alt="IMG20240309232820__MG_5709" class="gallery-image" id="1">
+                <img src="../IMG/20240309232820__MG_5709.jpg" alt="IMG20240309232820__MG_5709" class="gallery-image"
+                    id="2">
+                <img src="../IMG/20240309235428__MG_5724.jpg" alt="IMG20240309235428__MG_5724" class="gallery-image"
+                    id="3">
+                <img src="../IMG/cena-jovenes.jpg" alt="IMG2371012587963_MG_123458" class="gallery-image" id="4">
+                <img src="../IMG/cena-formal.jpg" alt="IMG87420132431365_IMG_87123" class="gallery-image" id="5">
+                <img src="../IMG/20240316083317__MG_5929.jpg" alt="IMG20240316083317__MG_5929" class="gallery-image"
+                    id="6">
+                <img src="../IMG/fondo.jpg" alt="IMG20458933152_MG_32348" class="gallery-image" id="7">
+                <img src="../IMG/20240615080044_IMG_7999.jpg" alt="IMG20240615080044_IMG_7999" class="gallery-image"
+                    id="8">
+                <img src="../IMG/20240316092045__MG_5947.jpg" alt="IMG20240316092045__MG_5947" class="gallery-image"
+                    id="9">
+                <img src="../IMG/20240310000735__MG_5740.jpg" alt="IMG20240310000735__MG_5740" class="gallery-image"
+                    id="10">
+                <img src="../IMG/20240309205726__MG_5657.jpg" alt="IMG20240309205726__MG_5657" class="gallery-image"
+                    id="11">
+                <img src="../IMG/IMG-20240217-WA0018.jpg" alt="IMG20240217-WA0018" class="gallery-image" id="12">
+                <img src="../IMG/20240316092314__MG_5959.jpg" alt="IMG20240316092314__MG_5959" class="gallery-image"
+                    id="13">
+                <img src="../IMG/amarrillo.jpg" alt="IMG210540367923_MG7812" class="gallery-image" id="14">
+            </div>
+
+            <div class="modal">
+                <img class="modal-content" id="modal-zoom-image">
+                <div class="modal-info">
+                    <span class="close">&#10094;</span>
+                    <span id="image-name">Nombre de la Imagen</span>
+                    <span id="image-counter">1/14</span>
+                </div>
+                <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+                <a class="next" onclick="changeImage(1)">&#10095;</a>
+                <div class="zoom-controls">
+                    <button id="zoom-in"><i class="fas fa-search-plus"></i></button>
+                    <input type="range" id="zoom-slider" min="10" max="200" value="100">
+                    <button id="zoom-out"><i class="fas fa-search-minus"></i></button>
+
+                    <button id="zoom-reset"></button>
+                </div>
+
+                <div class="thumbnails-container">
+                    <div class="thumbnail-info">
+                        <span id="thumbnail-name"></span>
+                        <span id="thumbnail-counter"></span>
+                    </div>
+                    <img src="../IMG/salida.jpg" alt="imagen 1" class="thumbnail" id="1">
+                    <img src="../IMG/20240309232820__MG_5709.jpg" alt="Imagen 2" class="thumbnail" id="2">
+                    <img src="../IMG/20240309235428__MG_5724.jpg" alt="Imagen 3" class="thumbnail" id="3">
+                    <img src="../IMG/cena-jovenes.jpg" alt="Imagen 4" class="thumbnail" id="4">
+                    <img src="../IMG/cena-formal.jpg" alt="Imagen 5" class="thumbnail" id="5">
+                    <img src="../IMG/20240316083317__MG_5929.jpg" alt="Imagen 6" class="thumbnail" id="6">
+                    <img src="../IMG/fondo.jpg" alt="Imagen 7" class="thumbnail" id="7">
+                    <img src="../IMG/20240615080044_IMG_7999.jpg" alt="Imagen 8" class="thumbnail" id="8">
+                    <img src="../IMG/20240316092045__MG_5947.jpg" alt="Imagen 9" class="thumbnail" id="9">
+                    <img src="../IMG/20240310000735__MG_5740.jpg" alt="Imagen 10" class="thumbnail" id="10">
+                    <img src="../IMG/20240309205726__MG_5657.jpg" alt="Imagen 11" class="thumbnail" id="11">
+                    <img src="../IMG/IMG-20240217-WA0018.jpg" alt="Imagen 12" class="thumbnail" id="12">
+                    <img src="../IMG/20240316092314__MG_5959.jpg" alt="Imagen 13" class="thumbnail" id="13">
+                    <img src="../IMG/amarrillo.jpg" alt="Imagen 14" class="thumbnail" id="14">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.gallery-image');
+        const totalImages = images.length;
+        const modalImage = document.getElementById('modal-zoom-image');
+        const imageNameElement = document.getElementById('image-name');
+        const imageCounterElement = document.getElementById('image-counter');
+        const zoomInButton = document.getElementById('zoom-in');
+        const zoomOutButton = document.getElementById('zoom-out');
+        const zoomSlider = document.getElementById('zoom-slider');
+        const zoomResetButton = document.getElementById('zoom-reset');
+
+        zoomSlider.value = 100;
+
+        function updateImageInfo() {
+            const currentImage = images[currentImageIndex];
+            modalImage.src = currentImage.src;
+            imageNameElement.textContent = currentImage.alt;
+            imageCounterElement.textContent = `${currentImageIndex + 1} / ${totalImages}`;
+        }
+
+        function changeImage(step) {
+            currentImageIndex = (currentImageIndex + step + totalImages) % totalImages;
+            updateImageInfo();
+        }
+
+        function updateZoom(scale) {
+            modalImage.style.transform = `scale(${scale})`;
+        }
+
+        zoomInButton.addEventListener('click', () => {
+            let currentScale = parseFloat(modalImage.style.transform.replace('scale(', '').replace(')', '')) || 1;
+            updateZoom(currentScale + 0.1);
+            zoomSlider.value = Math.min(200, (currentScale + 0.1) * 100);
+        });
+
+        zoomOutButton.addEventListener('click', () => {
+            let currentScale = parseFloat(modalImage.style.transform.replace('scale(', '').replace(')', '')) || 1;
+            if (currentScale > 0.1) {
+                updateZoom(currentScale - 0.1);
+                zoomSlider.value = Math.max(10, (currentScale - 0.1) * 100);
+            }
+        });
+
+        zoomSlider.addEventListener('input', () => {
+            const scale = zoomSlider.value / 100;
+            updateZoom(scale);
+        });
+
+        zoomResetButton.addEventListener('click', () => {
+            updateZoom(1);
+            zoomSlider.value = 100;
+        });
+
+        function openModal() {
+            document.querySelector('.modal').style.display = 'flex';
+            updateImageInfo();
+        }
+
+        document.querySelectorAll('.gallery-image').forEach((image, index) => {
+            image.addEventListener('click', () => {
+                currentImageIndex = index;
+                openModal();
+            });
+        });
+
+        document.querySelector('.close').addEventListener('click', () => {
+            document.querySelector('.modal').style.display = 'none';
+        });
+
+        document.querySelectorAll('.thumbnail').forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', () => {
+                currentImageIndex = index;
+                updateImageInfo();
+                modalImage.src = thumbnail.src;
+            });
+        });
+
+
+    </script>
+
+    </div>
+    <div id="videos" class="section">
+        <div class="video-gallery">
+            <div class="video-container">
+                <video controls>
+                    <source src="../videos.actividades/ssstik.io_1721957433011.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+
+            </div>
+            <div class="video-container">
+                <video controls>
+                    <source src="../videos.actividades/ssstik.io_1721957605895.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+
+            </div>
+            <div class="video-container">
+                <video controls>
+                    <source src="../videos.actividades/ssstik.io_1721957791037.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+
+            </div>
+            <div class="video-container">
+                <video controls>
+                    <source src="../videos.actividades/ssstik.io_1721958073691.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div id="contactos" class="section">
+        <div class="container">
+            <div class="left-section">
+                <h1>Nuestros Contactos<br> Nos encuentras como</h1>
+                <p>Somos verbo, somos familia </p>
+                <p><a href="mailto:dmsverboz21@gmail.com">dmsverboz21@gmail.com</a></p>
+                <p>Created by <a href="https://www.instagram.com/webs.proyectios?igsh=ZXZoMzVzZWN2aG8x">
+                        webs.proyectios</a></p>
+                <div class="social-links">
+                    <a href="https://www.tiktok.com/@juventud.verbo.at?_t=8oqfaLICshZ&_r=1">Tiktok <a>|</a></a>
+                    <a href="#">facebook <a>|</a></a>
+                    <a href="#">instagram</a>
+                    <p>Contamos con grupo de whatsapp, si te interesa envianos un comentario</p>
+                </div>
+            </div>
+            <form class="comment-form" action="https://formspree.io/f/xqazbooz" method="POST">
+                <h2>Envia tu comentario</h2>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="comment">Comentario</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.comment-form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+
+            var form = e.target;
+
+            // Envía el formulario usando fetch
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert("Comentario enviado con éxito");
+                    form.reset();
+                } else {
+                    alert("Hubo un problema al enviar el comentario. Inténtalo de nuevo.");
+                }
+            }).catch(error => {
+                alert("Hubo un problema al enviar el comentario. Inténtalo de nuevo.");
+            });
+        });
+
+    </script>
+
+
+    </div>
+    </div>
+    <div id="ubicacion" class="section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.7330324542118!2d-90.54986058846363!3d14.557253385865298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a76917258977%3A0xf04c86a7b659a3bc!2sIglesia%20Cristiana%20Verbo%20Atanasio%20zona%2021!5e0!3m2!1ses-419!2sgt!4v1720656740275!5m2!1ses-419!2sgt"
+            width="101%" height="109%" style="margin-top: -3%;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+    <script>
+        function openLightbox() {
+            document.getElementById('lightbox').style.display = 'block';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName('lightbox-slide');
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slides[slideIndex - 1].style.display = 'block';
+        }
+
+
+    </script>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+                section.style.display = 'none'; // Oculta la sección inicialmente
+            });
+
+            const sectionToShow = document.getElementById(sectionId);
+            sectionToShow.style.display = 'block'; // Muestra la sección
+            setTimeout(() => {
+                sectionToShow.classList.add('active');
+            }, 10);
+
+            const navLinks = document.querySelectorAll('.side-nav ul li a');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            const activeLink = document.querySelector(`a[onclick="showSection('${sectionId}')"]`);
+            activeLink.classList.add('active');
+        }
+
+
+
+    </script>
+    <script>
+        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function () {
+                const dropdown = this.nextElementSibling;
+                if (dropdown.style.display === 'flex') {
+                    dropdown.style.display = 'none';
+                } else {
+                    dropdown.style.display = 'flex';
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
